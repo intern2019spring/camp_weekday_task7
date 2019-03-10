@@ -2,5 +2,5 @@
 <p>タイトル: <%= @article.title %></p>
 <%= simple_format(@article.body) %>
 <%= link_to "一覧に戻る", '#' %>
-<%= link_to "編集", '#' %>
+<%= link_to "編集", edit_article_path %>
 <%= link_to "削除", article_path(@article), method: :delete, data: { confirm: "削除してよろしいですか？" } %>
