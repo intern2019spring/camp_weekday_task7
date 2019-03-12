@@ -1,5 +1,5 @@
 <h2 class="mt-3">論文一覧</h2>
 <% @articles.each do |article|  %>
-  <p><%= link_to article.title, article_path(article) %></p>
-<% end  %>
+  <p><%= link_to article.title, article %></p>
+<% end %>
 <%= link_to "新規論文投稿", new_article_path %>
